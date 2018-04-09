@@ -12,10 +12,10 @@
   }
 
 //cara menghapus data
-$sql = "DELETE FROM tutorial WHERE murid='iyan'";
+// $sql = "DELETE FROM tutorial WHERE murid='iyan'";
 
 //cara mengedit data
-// $sql = "UPDATE tutorial SET murid='iyan', alamat='matraman' WHERE murid='nurhadyan'";
+$sql = "UPDATE tutorial SET murid='iyan', alamat='matraman' WHERE murid='nurhadyan'";
 
 if ($mysqli->query($sql) === TRUE) {
   echo 'berhasil di edit';
