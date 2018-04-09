@@ -14,7 +14,14 @@
 	}
 
 	//3. cara ketiga untuk memasukan data
-	$sql = "INSERT INTO murid (nama, alamat) VALUES ('nurhadyan', 'jakarta timur')";
+	$sql = "INSERT INTO tutorial (murid, alamat) VALUES ('nurhadyan', 'jakarta timur')";
+
+	//4. Menguji apakah berhasil atau gagal memasukan database
+	if ($mysqli->query($sql) == TRUE) {
+		echo "BERHASIL";
+	}else{
+		echo 'GAGAL';
+	}
 
 	//2. menutup koneksi terlebih dahulu
 	$mysqli->close();
