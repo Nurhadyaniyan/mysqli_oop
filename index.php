@@ -13,6 +13,9 @@
 		echo ' gagal konek ke mysqli ' . $mysqli->connect_error;
 	}
 
+	//3. cara ketiga untuk memasukan data
+	$sql = "INSERT INTO murid (nama, alamat) VALUES ('nurhadyan', 'jakarta timur')";
+
 	//2. menutup koneksi terlebih dahulu
 	$mysqli->close();
 
